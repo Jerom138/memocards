@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Deck « Capitales des pays » : 100 cartes de 600 x 400.
+  Taille totale = (600 x 2) x (400 x 100) = 1200 x 40000.
+
+  Colonne de gauche  = pays.
+  Colonne de droite  = capitale.
+  Le suffixe _BothDir autorise l'entraînement dans les deux sens.
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200" height="40000" viewBox="0 0 1200 40000">
+  <style>
+    text {
+      font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+      text-anchor: middle;
+      dominant-baseline: central;
+    }
+    .tag { font-size: 30px; fill: #8b93a7; letter-spacing: 4px; font-weight: 600; }
+    .country { fill: #1f2430; font-weight: 700; }
+    .capital { fill: #274690; font-weight: 700; }
+  </style>
+
+  <rect x="0" y="0" width="600" height="40000" fill="#ffffff"/>
+  <rect x="600" y="0" width="600" height="40000" fill="#eef4ff"/>
+  <!-- Carte 1: Algérie ↔ Alger -->
+  <g transform="translate(0,0)" data-card-index="1">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Algérie</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Alger</text>
+  </g>
+  <!-- Carte 2: Allemagne ↔ Berlin -->
+  <g transform="translate(0,400)" data-card-index="2">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="84px">Allemagne</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Berlin</text>
+  </g>
+  <!-- Carte 3: Arabie saoudite ↔ Riyad -->
+  <g transform="translate(0,800)" data-card-index="3">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="68px">Arabie saoudite</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Riyad</text>
+  </g>
+  <!-- Carte 4: Argentine ↔ Buenos Aires -->
+  <g transform="translate(0,1200)" data-card-index="4">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="84px">Argentine</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="76px">Buenos Aires</text>
+  </g>
+  <!-- Carte 5: Arménie ↔ Erevan -->
+  <g transform="translate(0,1600)" data-card-index="5">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Arménie</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Erevan</text>
+  </g>
+  <!-- Carte 6: Australie ↔ Canberra -->
+  <g transform="translate(0,2000)" data-card-index="6">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="84px">Australie</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Canberra</text>
+  </g>
+  <!-- Carte 7: Autriche ↔ Vienne -->
+  <g transform="translate(0,2400)" data-card-index="7">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Autriche</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Vienne</text>
+  </g>
+  <!-- Carte 8: Bangladesh ↔ Dacca -->
+  <g transform="translate(0,2800)" data-card-index="8">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="84px">Bangladesh</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Dacca</text>
+  </g>
+  <!-- Carte 9: Belgique ↔ Bruxelles -->
+  <g transform="translate(0,3200)" data-card-index="9">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Belgique</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="84px">Bruxelles</text>
+  </g>
+  <!-- Carte 10: Biélorussie ↔ Minsk -->
+  <g transform="translate(0,3600)" data-card-index="10">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="84px">Biélorussie</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Minsk</text>
+  </g>
+  <!-- Carte 11: Brésil ↔ Brasilia -->
+  <g transform="translate(0,4000)" data-card-index="11">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Brésil</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Brasilia</text>
+  </g>
+  <!-- Carte 12: Bulgarie ↔ Sofia -->
+  <g transform="translate(0,4400)" data-card-index="12">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Bulgarie</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Sofia</text>
+  </g>
+  <!-- Carte 13: Cambodge ↔ Phnom Penh -->
+  <g transform="translate(0,4800)" data-card-index="13">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Cambodge</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="84px">Phnom Penh</text>
+  </g>
+  <!-- Carte 14: Cameroun ↔ Yaoundé -->
+  <g transform="translate(0,5200)" data-card-index="14">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Cameroun</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Yaoundé</text>
+  </g>
+  <!-- Carte 15: Canada ↔ Ottawa -->
+  <g transform="translate(0,5600)" data-card-index="15">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Canada</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Ottawa</text>
+  </g>
+  <!-- Carte 16: Chili ↔ Santiago -->
+  <g transform="translate(0,6000)" data-card-index="16">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Chili</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Santiago</text>
+  </g>
+  <!-- Carte 17: Chine ↔ Pékin -->
+  <g transform="translate(0,6400)" data-card-index="17">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Chine</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Pékin</text>
+  </g>
+  <!-- Carte 18: Chypre ↔ Nicosie -->
+  <g transform="translate(0,6800)" data-card-index="18">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Chypre</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Nicosie</text>
+  </g>
+  <!-- Carte 19: Colombie ↔ Bogota -->
+  <g transform="translate(0,7200)" data-card-index="19">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Colombie</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Bogota</text>
+  </g>
+  <!-- Carte 20: Corée du Nord ↔ Pyongyang -->
+  <g transform="translate(0,7600)" data-card-index="20">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="76px">Corée du Nord</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="84px">Pyongyang</text>
+  </g>
+  <!-- Carte 21: Corée du Sud ↔ Séoul -->
+  <g transform="translate(0,8000)" data-card-index="21">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="76px">Corée du Sud</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Séoul</text>
+  </g>
+  <!-- Carte 22: Costa Rica ↔ San José -->
+  <g transform="translate(0,8400)" data-card-index="22">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="84px">Costa Rica</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">San José</text>
+  </g>
+  <!-- Carte 23: Côte d’Ivoire ↔ Yamoussoukro -->
+  <g transform="translate(0,8800)" data-card-index="23">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="76px">Côte d’Ivoire</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="76px">Yamoussoukro</text>
+  </g>
+  <!-- Carte 24: Croatie ↔ Zagreb -->
+  <g transform="translate(0,9200)" data-card-index="24">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Croatie</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Zagreb</text>
+  </g>
+  <!-- Carte 25: Cuba ↔ La Havane -->
+  <g transform="translate(0,9600)" data-card-index="25">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Cuba</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="84px">La Havane</text>
+  </g>
+  <!-- Carte 26: Danemark ↔ Copenhague -->
+  <g transform="translate(0,10000)" data-card-index="26">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Danemark</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="84px">Copenhague</text>
+  </g>
+  <!-- Carte 27: Égypte ↔ Le Caire -->
+  <g transform="translate(0,10400)" data-card-index="27">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Égypte</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Le Caire</text>
+  </g>
+  <!-- Carte 28: Émirats arabes unis ↔ Abou Dabi -->
+  <g transform="translate(0,10800)" data-card-index="28">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="188" font-size="64px"><tspan x="300" y="188">Émirats</tspan><tspan x="300" y="258">arabes unis</tspan></text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="84px">Abou Dabi</text>
+  </g>
+  <!-- Carte 29: Équateur ↔ Quito -->
+  <g transform="translate(0,11200)" data-card-index="29">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Équateur</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Quito</text>
+  </g>
+  <!-- Carte 30: Espagne ↔ Madrid -->
+  <g transform="translate(0,11600)" data-card-index="30">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Espagne</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Madrid</text>
+  </g>
+  <!-- Carte 31: Estonie ↔ Tallinn -->
+  <g transform="translate(0,12000)" data-card-index="31">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Estonie</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Tallinn</text>
+  </g>
+  <!-- Carte 32: États-Unis ↔ Washington -->
+  <g transform="translate(0,12400)" data-card-index="32">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="84px">États-Unis</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="84px">Washington</text>
+  </g>
+  <!-- Carte 33: Éthiopie ↔ Addis-Abeba -->
+  <g transform="translate(0,12800)" data-card-index="33">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Éthiopie</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="84px">Addis-Abeba</text>
+  </g>
+  <!-- Carte 34: Finlande ↔ Helsinki -->
+  <g transform="translate(0,13200)" data-card-index="34">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Finlande</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Helsinki</text>
+  </g>
+  <!-- Carte 35: France ↔ Paris -->
+  <g transform="translate(0,13600)" data-card-index="35">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">France</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Paris</text>
+  </g>
+  <!-- Carte 36: Géorgie ↔ Tbilissi -->
+  <g transform="translate(0,14000)" data-card-index="36">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Géorgie</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Tbilissi</text>
+  </g>
+  <!-- Carte 37: Ghana ↔ Accra -->
+  <g transform="translate(0,14400)" data-card-index="37">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Ghana</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Accra</text>
+  </g>
+  <!-- Carte 38: Grèce ↔ Athènes -->
+  <g transform="translate(0,14800)" data-card-index="38">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Grèce</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Athènes</text>
+  </g>
+  <!-- Carte 39: Guatemala ↔ Guatemala -->
+  <g transform="translate(0,15200)" data-card-index="39">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="84px">Guatemala</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="84px">Guatemala</text>
+  </g>
+  <!-- Carte 40: Haïti ↔ Port-au-Prince -->
+  <g transform="translate(0,15600)" data-card-index="40">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Haïti</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="76px">Port-au-Prince</text>
+  </g>
+  <!-- Carte 41: Hongrie ↔ Budapest -->
+  <g transform="translate(0,16000)" data-card-index="41">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Hongrie</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Budapest</text>
+  </g>
+  <!-- Carte 42: Inde ↔ New Delhi -->
+  <g transform="translate(0,16400)" data-card-index="42">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Inde</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="84px">New Delhi</text>
+  </g>
+  <!-- Carte 43: Irak ↔ Bagdad -->
+  <g transform="translate(0,16800)" data-card-index="43">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Irak</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Bagdad</text>
+  </g>
+  <!-- Carte 44: Iran ↔ Téhéran -->
+  <g transform="translate(0,17200)" data-card-index="44">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Iran</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Téhéran</text>
+  </g>
+  <!-- Carte 45: Irlande ↔ Dublin -->
+  <g transform="translate(0,17600)" data-card-index="45">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Irlande</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Dublin</text>
+  </g>
+  <!-- Carte 46: Islande ↔ Reykjavik -->
+  <g transform="translate(0,18000)" data-card-index="46">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Islande</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="84px">Reykjavik</text>
+  </g>
+  <!-- Carte 47: Italie ↔ Rome -->
+  <g transform="translate(0,18400)" data-card-index="47">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Italie</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Rome</text>
+  </g>
+  <!-- Carte 48: Jamaïque ↔ Kingston -->
+  <g transform="translate(0,18800)" data-card-index="48">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Jamaïque</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Kingston</text>
+  </g>
+  <!-- Carte 49: Japon ↔ Tokyo -->
+  <g transform="translate(0,19200)" data-card-index="49">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Japon</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Tokyo</text>
+  </g>
+  <!-- Carte 50: Jordanie ↔ Amman -->
+  <g transform="translate(0,19600)" data-card-index="50">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Jordanie</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Amman</text>
+  </g>
+  <!-- Carte 51: Kazakhstan ↔ Astana -->
+  <g transform="translate(0,20000)" data-card-index="51">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="84px">Kazakhstan</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Astana</text>
+  </g>
+  <!-- Carte 52: Kenya ↔ Nairobi -->
+  <g transform="translate(0,20400)" data-card-index="52">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Kenya</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Nairobi</text>
+  </g>
+  <!-- Carte 53: Lettonie ↔ Riga -->
+  <g transform="translate(0,20800)" data-card-index="53">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Lettonie</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Riga</text>
+  </g>
+  <!-- Carte 54: Liban ↔ Beyrouth -->
+  <g transform="translate(0,21200)" data-card-index="54">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Liban</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Beyrouth</text>
+  </g>
+  <!-- Carte 55: Libye ↔ Tripoli -->
+  <g transform="translate(0,21600)" data-card-index="55">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Libye</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Tripoli</text>
+  </g>
+  <!-- Carte 56: Lituanie ↔ Vilnius -->
+  <g transform="translate(0,22000)" data-card-index="56">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Lituanie</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Vilnius</text>
+  </g>
+  <!-- Carte 57: Luxembourg ↔ Luxembourg -->
+  <g transform="translate(0,22400)" data-card-index="57">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="84px">Luxembourg</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="84px">Luxembourg</text>
+  </g>
+  <!-- Carte 58: Madagascar ↔ Antananarivo -->
+  <g transform="translate(0,22800)" data-card-index="58">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="84px">Madagascar</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="76px">Antananarivo</text>
+  </g>
+  <!-- Carte 59: Malaisie ↔ Kuala Lumpur -->
+  <g transform="translate(0,23200)" data-card-index="59">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Malaisie</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="76px">Kuala Lumpur</text>
+  </g>
+  <!-- Carte 60: Mali ↔ Bamako -->
+  <g transform="translate(0,23600)" data-card-index="60">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Mali</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Bamako</text>
+  </g>
+  <!-- Carte 61: Malte ↔ La Valette -->
+  <g transform="translate(0,24000)" data-card-index="61">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Malte</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="84px">La Valette</text>
+  </g>
+  <!-- Carte 62: Maroc ↔ Rabat -->
+  <g transform="translate(0,24400)" data-card-index="62">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Maroc</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Rabat</text>
+  </g>
+  <!-- Carte 63: Mexique ↔ Mexico -->
+  <g transform="translate(0,24800)" data-card-index="63">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Mexique</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Mexico</text>
+  </g>
+  <!-- Carte 64: Monaco ↔ Monaco -->
+  <g transform="translate(0,25200)" data-card-index="64">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Monaco</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Monaco</text>
+  </g>
+  <!-- Carte 65: Mongolie ↔ Oulan-Bator -->
+  <g transform="translate(0,25600)" data-card-index="65">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Mongolie</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="84px">Oulan-Bator</text>
+  </g>
+  <!-- Carte 66: Népal ↔ Katmandou -->
+  <g transform="translate(0,26000)" data-card-index="66">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Népal</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="84px">Katmandou</text>
+  </g>
+  <!-- Carte 67: Nigeria ↔ Abuja -->
+  <g transform="translate(0,26400)" data-card-index="67">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Nigeria</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Abuja</text>
+  </g>
+  <!-- Carte 68: Norvège ↔ Oslo -->
+  <g transform="translate(0,26800)" data-card-index="68">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Norvège</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Oslo</text>
+  </g>
+  <!-- Carte 69: Nouvelle-Zélande ↔ Wellington -->
+  <g transform="translate(0,27200)" data-card-index="69">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="68px">Nouvelle-Zélande</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="84px">Wellington</text>
+  </g>
+  <!-- Carte 70: Oman ↔ Mascate -->
+  <g transform="translate(0,27600)" data-card-index="70">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Oman</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Mascate</text>
+  </g>
+  <!-- Carte 71: Pakistan ↔ Islamabad -->
+  <g transform="translate(0,28000)" data-card-index="71">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Pakistan</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="84px">Islamabad</text>
+  </g>
+  <!-- Carte 72: Panama ↔ Panama -->
+  <g transform="translate(0,28400)" data-card-index="72">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Panama</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Panama</text>
+  </g>
+  <!-- Carte 73: Pays-Bas ↔ Amsterdam -->
+  <g transform="translate(0,28800)" data-card-index="73">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Pays-Bas</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="84px">Amsterdam</text>
+  </g>
+  <!-- Carte 74: Pérou ↔ Lima -->
+  <g transform="translate(0,29200)" data-card-index="74">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Pérou</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Lima</text>
+  </g>
+  <!-- Carte 75: Philippines ↔ Manille -->
+  <g transform="translate(0,29600)" data-card-index="75">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="84px">Philippines</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Manille</text>
+  </g>
+  <!-- Carte 76: Pologne ↔ Varsovie -->
+  <g transform="translate(0,30000)" data-card-index="76">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Pologne</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Varsovie</text>
+  </g>
+  <!-- Carte 77: Portugal ↔ Lisbonne -->
+  <g transform="translate(0,30400)" data-card-index="77">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Portugal</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Lisbonne</text>
+  </g>
+  <!-- Carte 78: Qatar ↔ Doha -->
+  <g transform="translate(0,30800)" data-card-index="78">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Qatar</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Doha</text>
+  </g>
+  <!-- Carte 79: République dominicaine ↔ Saint-Domingue -->
+  <g transform="translate(0,31200)" data-card-index="79">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="188" font-size="64px"><tspan x="300" y="188">République</tspan><tspan x="300" y="258">dominicaine</tspan></text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="76px">Saint-Domingue</text>
+  </g>
+  <!-- Carte 80: Roumanie ↔ Bucarest -->
+  <g transform="translate(0,31600)" data-card-index="80">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Roumanie</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Bucarest</text>
+  </g>
+  <!-- Carte 81: Royaume-Uni ↔ Londres -->
+  <g transform="translate(0,32000)" data-card-index="81">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="84px">Royaume-Uni</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Londres</text>
+  </g>
+  <!-- Carte 82: Russie ↔ Moscou -->
+  <g transform="translate(0,32400)" data-card-index="82">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Russie</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Moscou</text>
+  </g>
+  <!-- Carte 83: Sénégal ↔ Dakar -->
+  <g transform="translate(0,32800)" data-card-index="83">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Sénégal</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Dakar</text>
+  </g>
+  <!-- Carte 84: Serbie ↔ Belgrade -->
+  <g transform="translate(0,33200)" data-card-index="84">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Serbie</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Belgrade</text>
+  </g>
+  <!-- Carte 85: Singapour ↔ Singapour -->
+  <g transform="translate(0,33600)" data-card-index="85">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="84px">Singapour</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="84px">Singapour</text>
+  </g>
+  <!-- Carte 86: Slovaquie ↔ Bratislava -->
+  <g transform="translate(0,34000)" data-card-index="86">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="84px">Slovaquie</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="84px">Bratislava</text>
+  </g>
+  <!-- Carte 87: Slovénie ↔ Ljubljana -->
+  <g transform="translate(0,34400)" data-card-index="87">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Slovénie</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="84px">Ljubljana</text>
+  </g>
+  <!-- Carte 88: Suède ↔ Stockholm -->
+  <g transform="translate(0,34800)" data-card-index="88">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Suède</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="84px">Stockholm</text>
+  </g>
+  <!-- Carte 89: Suisse ↔ Berne -->
+  <g transform="translate(0,35200)" data-card-index="89">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Suisse</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Berne</text>
+  </g>
+  <!-- Carte 90: Tanzanie ↔ Dodoma -->
+  <g transform="translate(0,35600)" data-card-index="90">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Tanzanie</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Dodoma</text>
+  </g>
+  <!-- Carte 91: Tchéquie ↔ Prague -->
+  <g transform="translate(0,36000)" data-card-index="91">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Tchéquie</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Prague</text>
+  </g>
+  <!-- Carte 92: Thaïlande ↔ Bangkok -->
+  <g transform="translate(0,36400)" data-card-index="92">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="84px">Thaïlande</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Bangkok</text>
+  </g>
+  <!-- Carte 93: Tunisie ↔ Tunis -->
+  <g transform="translate(0,36800)" data-card-index="93">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Tunisie</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Tunis</text>
+  </g>
+  <!-- Carte 94: Turquie ↔ Ankara -->
+  <g transform="translate(0,37200)" data-card-index="94">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Turquie</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Ankara</text>
+  </g>
+  <!-- Carte 95: Ukraine ↔ Kyiv -->
+  <g transform="translate(0,37600)" data-card-index="95">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Ukraine</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Kyiv</text>
+  </g>
+  <!-- Carte 96: Uruguay ↔ Montevideo -->
+  <g transform="translate(0,38000)" data-card-index="96">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Uruguay</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="84px">Montevideo</text>
+  </g>
+  <!-- Carte 97: Vatican ↔ Cité du Vatican -->
+  <g transform="translate(0,38400)" data-card-index="97">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Vatican</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="68px">Cité du Vatican</text>
+  </g>
+  <!-- Carte 98: Venezuela ↔ Caracas -->
+  <g transform="translate(0,38800)" data-card-index="98">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="84px">Venezuela</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Caracas</text>
+  </g>
+  <!-- Carte 99: Viêt Nam ↔ Hanoï -->
+  <g transform="translate(0,39200)" data-card-index="99">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Viêt Nam</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Hanoï</text>
+  </g>
+  <!-- Carte 100: Zimbabwe ↔ Harare -->
+  <g transform="translate(0,39600)" data-card-index="100">
+    <text class="tag" x="300" y="60">PAYS</text>
+    <text class="country" x="300" y="220" font-size="92px">Zimbabwe</text>
+    <text class="tag" x="900" y="60">CAPITALE</text>
+    <text class="capital" x="900" y="220" font-size="92px">Harare</text>
+  </g>
+</svg>

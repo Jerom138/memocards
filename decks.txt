@@ -3,6 +3,7 @@
 # Les lignes vides et les lignes commençant par # sont ignorées.
 
 Chimie_les_verreries_BothDir.svg
+Capitales_des_pays_BothDir.svg
 Drapeaux_des_pays_du_monde_BothDir.svg
 Démonstration_NoBothDir.svg
 Anglais_les_couleurs_BothDir.svg
