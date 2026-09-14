@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Révision de cartes recto/verso, 100 % statique, sans compte ni serveur.">
+  <meta name="color-scheme" content="light dark">
+  <title>MemoCards</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='6' width='22' height='16' rx='3' fill='%23a9b6f5'/%3E%3Crect x='7' y='10' width='22' height='16' rx='3' fill='%233f5ae0'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<header class="app-header">
+  <p class="app-title">MemoCards</p>
+</header>
+
+<main id="main">
+
+  <!-- ══════════════ Écran d'accueil ══════════════ -->
+  <section id="screen-home" class="screen" aria-labelledby="home-title">
+    <h1 id="home-title">Choisis un jeu de cartes</h1>
+    <p class="lead">Retourne la carte, dis si tu savais, et recommence.</p>
+
+    <div id="deck-list" class="deck-list"></div>
+
+    <p id="home-status" class="status" role="status"></p>
+  </section>
+
+  <!-- ══════════════ Écran de révision ══════════════ -->
+  <section id="screen-session" class="screen" hidden aria-labelledby="session-deck-name">
+    <div class="session-top">
+      <button type="button" id="btn-quit" class="btn btn-ghost">← Accueil</button>
+      <div class="session-id">
+        <span id="session-deck-name" class="session-deck-name"></span>
+        <span id="session-mode" class="badge"></span>
+      </div>
+    </div>
+
+    <div class="progress">
+      <p id="progress-text" class="progress-text" role="status"></p>
+      <div class="progress-track">
+        <div id="progress-fill" class="progress-fill"></div>
+      </div>
+    </div>
+
+    <p id="direction-badge" class="direction-badge" hidden></p>
+
+    <div class="card-scene">
+      <div id="card" class="card" role="img" aria-label="Carte à réviser">
+        <div id="card-front" class="card-face card-face--front"></div>
+        <div id="card-back" class="card-face card-face--back"></div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button type="button" id="btn-flip" class="btn btn-primary btn-lg">Retourner</button>
+      <div id="answer-buttons" class="answer-buttons" hidden>
+        <button type="button" id="btn-wrong" class="btn btn-lg btn-danger">✕&nbsp;&nbsp;Je ne savais pas</button>
+        <button type="button" id="btn-right" class="btn btn-lg btn-success">✓&nbsp;&nbsp;Je savais</button>
+      </div>
+    </div>
+
+    <p class="keyboard-hint">Espace : retourner &nbsp;·&nbsp; ← : je ne savais pas &nbsp;·&nbsp; → : je savais</p>
+  </section>
+
+  <!-- ══════════════ Écran de bilan ══════════════ -->
+  <section id="screen-result" class="screen" hidden aria-labelledby="result-title">
+    <div class="result-card">
+      <h1 id="result-title">Résultat</h1>
+      <p id="result-score" class="result-score"></p>
+      <p id="result-percent" class="result-percent"></p>
+
+      <div id="result-missed" class="result-missed" hidden>
+        <h2>À retravailler</h2>
+        <ul id="result-missed-list"></ul>
+      </div>
+
+      <div class="actions actions-row">
+        <button type="button" id="btn-restart" class="btn btn-primary btn-lg">Recommencer</button>
+        <button type="button" id="btn-back-home" class="btn btn-lg">Accueil</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Gabarit d'une vignette de deck sur l'accueil -->
+<template id="tpl-deck">
+  <article class="deck-card">
+    <h2 class="deck-name"></h2>
+    <p class="deck-count"></p>
+    <div class="deck-progress" role="img">
+      <div class="progress-track">
+        <div class="progress-fill"></div>
+      </div>
+      <span class="deck-progress-label"></span>
+    </div>
+    <div class="deck-actions">
+      <button type="button" class="btn btn-primary" data-mode="review">Révision</button>
+      <button type="button" class="btn" data-mode="learn">Apprentissage</button>
+      <button type="button" class="btn" data-mode="test">Test</button>
+    </div>
+    <button type="button" class="btn btn-ghost btn-sm deck-reset">Réinitialiser ma progression</button>
+  </article>
+</template>
+
+<script src="./app.js" defer></script>
+</body>
+</html>

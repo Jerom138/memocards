@@ -1,0 +1,380 @@
+/* ══════════════════════════════════════════════════════════════
+   MemoCards — feuille de style unique
+   ══════════════════════════════════════════════════════════════ */
+
+:root {
+  --bg: #f4f6fa;
+  --surface: #ffffff;
+  --surface-2: #eef1f7;
+  --text: #1b2030;
+  --muted: #5d6478;
+  --border: #dfe4ee;
+  --accent: #3f5ae0;
+  --accent-soft: #e8ecfd;
+  --success: #157f4f;
+  --danger: #c0392b;
+  --radius: 16px;
+  --radius-lg: 22px;
+  --shadow: 0 1px 2px rgba(20, 28, 50, .06), 0 10px 28px rgba(20, 28, 50, .08);
+  --shadow-sm: 0 1px 2px rgba(20, 28, 50, .08);
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171f;
+    --surface: #1d212c;
+    --surface-2: #262b38;
+    --text: #eef1f7;
+    --muted: #a2aabf;
+    --border: #333a4a;
+    --accent: #8c9dff;
+    --accent-soft: #2a3150;
+    --success: #4ec78d;
+    --danger: #ff8a7a;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 10px 28px rgba(0, 0, 0, .35);
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, .3);
+  }
+}
+
+* { box-sizing: border-box; }
+
+/* Doit l'emporter sur les display: flex posés plus bas */
+[hidden] { display: none !important; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  font-family: var(--font);
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1 { font-size: 1.6rem; margin: 0 0 .3em; }
+h2 { font-size: 1.15rem; margin: 0 0 .3em; }
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--surface);
+  padding: .7rem 1rem;
+  border-radius: 0 0 var(--radius) 0;
+  z-index: 10;
+}
+.skip-link:focus { left: 0; }
+
+.app-header {
+  padding: 1rem clamp(1rem, 4vw, 2rem) 0;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.app-title {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  color: var(--muted);
+}
+
+#main {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1rem clamp(1rem, 4vw, 2rem) 3rem;
+}
+
+.lead { color: var(--muted); margin-top: 0; }
+
+.status { color: var(--muted); }
+
+/* ─────────────── Boutons ─────────────── */
+
+.btn {
+  font: inherit;
+  font-weight: 600;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: .7rem 1.1rem;
+  min-height: 44px;
+  cursor: pointer;
+  transition: background-color .15s, border-color .15s, transform .05s;
+}
+
+.btn:hover { background: var(--surface-2); }
+.btn:active { transform: translateY(1px); }
+
+.btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.btn-primary:hover { background: var(--accent); filter: brightness(1.08); }
+
+.btn-success { background: var(--success); border-color: var(--success); color: #fff; }
+.btn-success:hover { background: var(--success); filter: brightness(1.08); }
+
+.btn-danger { background: var(--danger); border-color: var(--danger); color: #fff; }
+.btn-danger:hover { background: var(--danger); filter: brightness(1.08); }
+
+.btn-lg { padding: .95rem 1.4rem; min-height: 54px; font-size: 1.05rem; }
+.btn-sm { padding: .4rem .6rem; min-height: 36px; font-size: .85rem; }
+
+.btn-ghost {
+  background: transparent;
+  border-color: transparent;
+  color: var(--muted);
+}
+.btn-ghost:hover { background: var(--surface-2); }
+
+@media (prefers-color-scheme: dark) {
+  .btn-primary, .btn-success, .btn-danger { color: #10131b; }
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ─────────────── Accueil ─────────────── */
+
+.deck-list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  margin-top: 1.5rem;
+}
+
+.deck-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: .55rem;
+}
+
+.deck-name { margin: 0; }
+.deck-count { margin: 0; color: var(--muted); font-size: .9rem; }
+
+.deck-progress {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  font-size: .85rem;
+  color: var(--muted);
+}
+.deck-progress .progress-track { flex: 1; }
+.deck-progress-label { font-variant-numeric: tabular-nums; }
+
+.deck-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: .3rem;
+}
+.deck-actions .btn { flex: 1 1 5rem; }
+
+.deck-reset { align-self: flex-start; margin-top: .2rem; }
+
+.deck-card.is-broken { border-style: dashed; }
+.deck-error { color: var(--danger); font-size: .9rem; margin: 0; }
+
+/* ─────────────── Barre de progression ─────────────── */
+
+.progress-track {
+  height: 8px;
+  border-radius: 99px;
+  background: var(--surface-2);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0;
+  border-radius: 99px;
+  background: var(--accent);
+  transition: width .3s ease;
+}
+
+/* ─────────────── Écran de session ─────────────── */
+
+.session-top {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+.session-id {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  min-width: 0;
+}
+
+.session-deck-name { font-weight: 700; }
+
+.badge {
+  font-size: .78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-radius: 99px;
+  padding: .2rem .6rem;
+  white-space: nowrap;
+}
+
+.progress { margin: .9rem 0 1rem; }
+
+.progress-text {
+  margin: 0 0 .4rem;
+  font-size: .9rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.direction-badge {
+  margin: 0 0 .6rem;
+  text-align: center;
+  font-size: .9rem;
+  color: var(--muted);
+}
+
+/* ─────────────── La carte ─────────────── */
+
+.card-scene {
+  /* --card-aspect (largeur / hauteur) est posé par le JS d'après les dimensions du SVG.
+     La seconde borne empêche la carte de dépasser de l'écran en paysage. */
+  width: min(100%, 40rem);
+  max-width: max(14rem, calc((100dvh - 22rem) * var(--card-aspect, 1.5)));
+  aspect-ratio: var(--card-aspect, 1.5);
+  margin: 0 auto;
+  perspective: 1400px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform .5s cubic-bezier(.4, .1, .2, 1);
+  cursor: pointer;
+}
+
+.card.is-flipped { transform: rotateY(180deg); }
+
+/* Utilisé pour repositionner la carte sans animation entre deux tirages */
+.card.no-anim { transition: none; }
+
+.card-face {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  background-color: #fff;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.card-face--back { transform: rotateY(180deg); }
+
+@media (prefers-reduced-motion: reduce) {
+  .card { transition: none; }
+}
+
+/* ─────────────── Actions de session ─────────────── */
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+  max-width: 40rem;
+  margin: 1.2rem auto 0;
+}
+
+.actions-row { flex-direction: row; flex-wrap: wrap; }
+.actions-row .btn { flex: 1 1 10rem; }
+
+.answer-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+}
+
+@media (min-width: 34rem) {
+  .answer-buttons { flex-direction: row; }
+  .answer-buttons .btn { flex: 1; }
+}
+
+.keyboard-hint {
+  text-align: center;
+  color: var(--muted);
+  font-size: .82rem;
+  margin-top: 1.2rem;
+}
+
+/* Le rappel clavier n'a pas de sens sur un écran tactile */
+@media (hover: none) {
+  .keyboard-hint { display: none; }
+}
+
+/* Écran peu haut (paysage, petite fenêtre) : on resserre pour garder
+   la carte entièrement visible sans faire défiler la page. */
+@media (max-height: 640px) {
+  .app-header { padding-top: .4rem; }
+  #main { padding-bottom: 1rem; }
+  .progress { margin: .5rem 0 .6rem; }
+  .actions { margin-top: .7rem; }
+  .keyboard-hint { display: none; }
+  .card-scene { max-width: max(14rem, calc((100dvh - 16rem) * var(--card-aspect, 1.5))); }
+}
+
+/* ─────────────── Bilan ─────────────── */
+
+.result-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: clamp(1.2rem, 5vw, 2rem);
+  max-width: 32rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.result-score {
+  font-size: clamp(2.4rem, 12vw, 3.4rem);
+  font-weight: 700;
+  margin: .3em 0 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.result-percent {
+  font-size: 1.3rem;
+  color: var(--muted);
+  margin: 0 0 1.2rem;
+}
+
+.result-missed { text-align: left; }
+
+.result-missed ul {
+  margin: 0 0 1.4rem;
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
+
+.result-missed li { margin: .2em 0; }

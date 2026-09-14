@@ -1,0 +1,7 @@
+# Liste des jeux de cartes, un nom de fichier SVG par ligne.
+# L'ordre des lignes est l'ordre d'affichage sur l'accueil.
+# Les lignes vides et les lignes commençant par # sont ignorées.
+
+Chimie_les_verreries_BothDir.svg
+Démonstration_NoBothDir.svg
+Anglais_les_couleurs_BothDir.svg

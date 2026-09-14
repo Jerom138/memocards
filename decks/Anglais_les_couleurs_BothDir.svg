@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Deck « Anglais les couleurs » : 6 cartes de 600 x 400.
+  Taille totale = (600 x 2) x (400 x 6) = 1200 x 2400.
+
+  Colonne de gauche  = anglais (recto), colonne de droite = français (verso).
+  Le suffixe _BothDir du nom de fichier autorise les deux sens : l'application
+  peut donc présenter indifféremment l'anglais ou le français en premier.
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200" height="2400" viewBox="0 0 1200 2400">
+
+  <style>
+    text {
+      font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+      text-anchor: middle;
+      dominant-baseline: central;
+    }
+    .word { font-size: 96px; fill: #1f2430; }
+    .tag  { font-size: 30px; fill: #8b93a7; letter-spacing: 4px; }
+  </style>
+
+  <rect x="0"   y="0" width="600" height="2400" fill="#ffffff"/>
+  <rect x="600" y="0" width="600" height="2400" fill="#fdf3ec"/>
+
+  <!-- Carte 1 -->
+  <g transform="translate(0,0)">
+    <text class="tag"  x="300" y="70">ENGLISH</text>
+    <text class="word" x="300" y="215">red</text>
+    <text class="tag"  x="900" y="70">FRANÇAIS</text>
+    <text class="word" x="900" y="215">rouge</text>
+  </g>
+
+  <!-- Carte 2 -->
+  <g transform="translate(0,400)">
+    <text class="tag"  x="300" y="70">ENGLISH</text>
+    <text class="word" x="300" y="215">blue</text>
+    <text class="tag"  x="900" y="70">FRANÇAIS</text>
+    <text class="word" x="900" y="215">bleu</text>
+  </g>
+
+  <!-- Carte 3 -->
+  <g transform="translate(0,800)">
+    <text class="tag"  x="300" y="70">ENGLISH</text>
+    <text class="word" x="300" y="215">green</text>
+    <text class="tag"  x="900" y="70">FRANÇAIS</text>
+    <text class="word" x="900" y="215">vert</text>
+  </g>
+
+  <!-- Carte 4 -->
+  <g transform="translate(0,1200)">
+    <text class="tag"  x="300" y="70">ENGLISH</text>
+    <text class="word" x="300" y="215">yellow</text>
+    <text class="tag"  x="900" y="70">FRANÇAIS</text>
+    <text class="word" x="900" y="215">jaune</text>
+  </g>
+
+  <!-- Carte 5 -->
+  <g transform="translate(0,1600)">
+    <text class="tag"  x="300" y="70">ENGLISH</text>
+    <text class="word" x="300" y="215">black</text>
+    <text class="tag"  x="900" y="70">FRANÇAIS</text>
+    <text class="word" x="900" y="215">noir</text>
+  </g>
+
+  <!-- Carte 6 -->
+  <g transform="translate(0,2000)">
+    <text class="tag"  x="300" y="70">ENGLISH</text>
+    <text class="word" x="300" y="215">white</text>
+    <text class="tag"  x="900" y="70">FRANÇAIS</text>
+    <text class="word" x="900" y="215">blanc</text>
+  </g>
+
+</svg>

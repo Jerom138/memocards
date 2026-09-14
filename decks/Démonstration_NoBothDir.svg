@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Deck « Démonstration » : 5 cartes de 600 x 400.
+  Taille totale = (600 x 2) x (400 x 5) = 1200 x 2000.
+
+  Colonne de gauche  (x =   0 -> 600) : les rectos.
+  Colonne de droite  (x = 600 -> 1200) : les versos.
+  Une ligne de 400 px de haut par carte, dans l'ordre.
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200" height="2000" viewBox="0 0 1200 2000">
+
+  <style>
+    text {
+      font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+      text-anchor: middle;
+      dominant-baseline: central;
+    }
+    .question { font-size: 110px; fill: #1f2430; }
+    .answer   { font-size: 110px; fill: #2b3f9e; font-weight: 700; }
+  </style>
+
+  <!-- Fonds : recto blanc, verso légèrement teinté -->
+  <rect x="0"   y="0" width="600" height="2000" fill="#ffffff"/>
+  <rect x="600" y="0" width="600" height="2000" fill="#eef2ff"/>
+
+  <!-- Carte 1 -->
+  <g transform="translate(0,0)">
+    <text class="question" x="300" y="200">1 + 1</text>
+    <text class="answer"   x="900" y="200">2</text>
+  </g>
+
+  <!-- Carte 2 -->
+  <g transform="translate(0,400)">
+    <text class="question" x="300" y="200">2 + 2</text>
+    <text class="answer"   x="900" y="200">4</text>
+  </g>
+
+  <!-- Carte 3 -->
+  <g transform="translate(0,800)">
+    <text class="question" x="300" y="200">3 + 3</text>
+    <text class="answer"   x="900" y="200">6</text>
+  </g>
+
+  <!-- Carte 4 -->
+  <g transform="translate(0,1200)">
+    <text class="question" x="300" y="200">France</text>
+    <text class="answer"   x="900" y="200">Paris</text>
+  </g>
+
+  <!-- Carte 5 -->
+  <g transform="translate(0,1600)">
+    <text class="question" x="300" y="200">Italie</text>
+    <text class="answer"   x="900" y="200">Rome</text>
+  </g>
+
+</svg>
