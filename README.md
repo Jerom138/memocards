@@ -224,7 +224,7 @@ Chaque mode se lance depuis l'accueil.
 |------|-------------|----------------|
 | **Révision** | Toutes les cartes une fois, dans un ordre aléatoire. Une carte ratée revient quelques cartes plus loin, jusqu'à être sue. | Quand toutes les cartes sont sues → bilan. |
 | **Apprentissage** | Tirage aléatoire pondéré : les cartes en difficulté reviennent beaucoup plus souvent, les cartes acquises restent présentes. Sans fin. | On quitte quand on veut, la progression est enregistrée au fur et à mesure. |
-| **Test** | Chaque carte exactement une fois, aucune répétition. | Bilan chiffré et liste des cartes à retravailler. |
+| **Test** | Chaque carte une fois par sens prévu, en ordre aléatoire : recto → verso, et aussi verso → recto pour les jeux dans les deux sens. | Score par question et liste des cartes à retravailler. |
 
 Poids utilisés en mode apprentissage :
 

@@ -299,17 +299,23 @@
    *  review — toutes les cartes une fois, en ordre aléatoire ;
    *           une carte ratée revient un peu plus loin jusqu'à être sue.
    *  learn  — sans fin, tirage pondéré par les difficultés passées.
-   *  test   — toutes les cartes exactement une fois, puis bilan.
+   *  test   — chaque carte une fois par sens prévu, puis bilan.
    */
   function createSession(deck, mode) {
-    const total = deck.cards;
-    const allIndexes = range(total);
+    const allIndexes = range(deck.cards);
+    const testCards = mode === MODES.test.key
+      ? allIndexes.flatMap((index) => deck.bothDirections
+        ? [{ index, reversed: false }, { index, reversed: true }]
+        : [{ index, reversed: false }])
+      : [];
+    const total = mode === MODES.test.key ? testCards.length : deck.cards;
 
     const state = {
       deck,
       mode,
       total,
-      queue: mode === MODES.learn.key ? [] : shuffle(allIndexes.slice()),
+      queue: mode === MODES.learn.key ? []
+        : shuffle(mode === MODES.test.key ? testCards : allIndexes.slice()),
       current: null,       // { index, reversed }
       lastIndex: -1,       // évite de tirer deux fois la même carte de suite
       answered: 0,
@@ -332,7 +338,13 @@
           state.current = null;
           return null;
         }
-        index = state.queue.shift();
+        const queued = state.queue.shift();
+        if (mode === MODES.test.key) {
+          state.current = queued;
+          state.lastIndex = queued.index;
+          return state.current;
+        }
+        index = queued;
       }
 
       state.lastIndex = index;
@@ -376,14 +388,14 @@
       const done = mode === MODES.test.key ? state.answered : state.cleared;
       return {
         ratio: total ? done / total : 0,
-        text: `Carte ${Math.min(done + 1, total)} / ${total}`,
+        text: `${mode === MODES.test.key ? 'Question' : 'Carte'} ${Math.min(done + 1, total)} / ${total}`,
       };
     }
 
     /** Bilan de fin de session (modes révision et test). */
     function summary() {
       const missed = [...state.missed].sort((a, b) => a - b);
-      const score = total - missed.length;
+      const score = mode === MODES.test.key ? state.correct : total - missed.length;
       return { total, score, ratio: total ? score / total : 0, missed };
     }
 
