@@ -4,6 +4,6 @@
 
 Chimie_les_verreries_BothDir.svg
 Capitales_des_pays_BothDir.svg
-Drapeaux_des_pays_du_monde_BothDir.svg
+Drapeaux_des_pays_du_monde_NoBothDir.svg
 Démonstration_NoBothDir.svg
 Anglais_les_couleurs_BothDir.svg
